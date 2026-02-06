@@ -12,8 +12,10 @@ const db = new sqlite3.Database("./risks.db", (err) => {
   else console.log("SQLite connected");
 });
 
+
 // Table create
 db.run(`
+  
   CREATE TABLE IF NOT EXISTS risks (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     asset TEXT,
