@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import RiskForm from "./RiskForm.js";
 import { Dashboard } from "./Dashboard.js";
 import axios from "axios";
-import "./App.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function App() {
