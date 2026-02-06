@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
+
+const BACKEND_URI = process.env.REACT_APP_BACKEND
+
 function RiskForm({ setRisks }) {
   const [asset, setAsset] = useState("");
   const [threat, setThreat] = useState("");
@@ -69,7 +72,7 @@ function RiskForm({ setRisks }) {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/add-risk",
+        `${BACKEND_URI}/add-risk`,
         { asset, threat, likelihood, impact, score: riskPreview, level, hint }
       );
 
