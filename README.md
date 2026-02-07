@@ -89,15 +89,20 @@ https://grc-filter-task-shreyansh-shardul.onrender.com
 REACT_APP_BACKEND=https://grc-filter-task-shreyansh-shardul.onrender.com
 
 ## Backend Setup
-cd backend
+cd backend    
+
 npm install
-npm start
+  
+npm start  
+
 Backend will start on port 8000.
 
 
-### 1️ Frontend Setup
+### Frontend Setup
 
-cd my-app
-npm install
+cd my-app  
+
+npm install 
+
 npm start
 
